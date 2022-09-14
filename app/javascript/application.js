@@ -3,24 +3,8 @@
 // import "./controllers"
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // import './index.css';
-import Greeting from './Greeting';
-
-function App() {
-  return (
-    <>
-      <h1>Hello, this is the greeting App.</h1>
-      <Greeting />
-    </>
-  );
-}
+import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />} />
-    </Routes>
-  </BrowserRouter>,
-);
+root.render(<App />);

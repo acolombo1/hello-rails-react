@@ -22,6 +22,9 @@ module.exports = {
     path: path.resolve(__dirname, 'app/assets/builds'),
   },
   plugins: [
+    new webpack.ProvidePlugin({
+      React: 'react',
+    }),
     new webpack.optimize.LimitChunkCountPlugin({
       maxChunks: 1,
     }),
